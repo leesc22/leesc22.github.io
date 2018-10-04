@@ -1,10 +1,10 @@
-#My Website
+# My Website
 My personal website about who I am and what I do.
 
-##About Me
+## About Me
 I'm Lee Siew Ching from Malaysia. A Web Developer. A Unit Trust Consultant
 
-##Skills
+## Skills
 Languages:
 - HTML5
 - CSS3
@@ -18,5 +18,5 @@ Frameworks:
 - Bootstrap
 - jQuery
 
-##Contact Me
+## Contact Me
 You can email me at leesiewching22@gmail.com or find me at [twitter](https://twitter.com/leesiewching22).
