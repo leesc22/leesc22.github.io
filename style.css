@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    /* Positioning & Sizing */
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+
+    /* Paddings*/
+    padding: 1em;
+
+    /* Flexbox */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* Background */
+    background-color: #333;
+}
+
+header a {
+    /* Text */
+    color: #eee;
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style-type: none;
+
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 40px;
+    text-align: center;
+}
+
+section#about {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+
+    /* FLexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Text */
+    text-align: center;
+    color: white;
+
+    /* Background */
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('img.jpg');*/
+    background-color: #333;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+section#about h1 {
+    font-size: 5em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+section#about a {
+    /* Positioning & Sizing */
+    display: block;
+    width: 200px;
+
+    /* Padding & margins */
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Text */
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+
+    /* Border */
+    border: 3px solid white;
+    border-radius: 20px;
+
+    /* Background */
+    background-color: rgba(147, 112, 219, 0.8);
+}
