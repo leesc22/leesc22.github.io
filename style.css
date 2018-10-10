@@ -21,6 +21,10 @@ header {
     background-color: transparent;
 }
 
+header.scrolled {
+    background-color: #fff;
+}
+
 header a.brand {
     /* Text */
     color: rgba(255,255,255,.7);
@@ -28,6 +32,10 @@ header a.brand {
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+header.scrolled a {
+    color: #212529;
 }
 
 header nav ul {
