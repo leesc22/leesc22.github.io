@@ -104,7 +104,8 @@ section#home a {
 
     /* Text */
     color: white;
-    font-size: 1.5em;
+    font-size: 1.25em;
+    font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
 
@@ -113,5 +114,5 @@ section#home a {
     border-radius: 20px;
 
     /* Background */
-    background-color: rgba(147, 112, 219, 0.8);
+    background-color: rgba(240, 95, 64, 0.8);
 }
