@@ -18,18 +18,25 @@ header {
     align-items: center;
 
     /* Background */
-    background-color: #333;
+    background-color: transparent;
 }
 
-header a {
+header a.brand {
     /* Text */
-    color: #eee;
+    color: rgba(255,255,255,.7);
+    font-size: 1.25rem;
+    font-weight: 700;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 header nav ul {
     list-style-type: none;
 
+    margin-top: 0;
+    margin-bottom: 0;
+
+    /* Flexbox */
     display: flex;
 }
 
@@ -38,7 +45,16 @@ header nav ul li {
     text-align: center;
 }
 
-section#about {
+header nav ul li a {
+    /* Text */
+    color: rgba(255,255,255,.7);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+section#home {
     /* Sizing */
     width: 100vw;
     height: 100vh;
@@ -62,13 +78,13 @@ section#about {
     background-attachment: fixed;
 }
 
-section#about h1 {
+section#home h1 {
     font-size: 5em;
     margin-top: 0;
     margin-bottom: 0.5em;
 }
 
-section#about a {
+section#home a {
     /* Positioning & Sizing */
     display: block;
     width: 200px;
@@ -81,8 +97,9 @@ section#about a {
 
     /* Text */
     color: white;
-    text-decoration: none;
     font-size: 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
 
     /* Border */
     border: 3px solid white;
