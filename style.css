@@ -1,3 +1,10 @@
+:root {
+    --theme: #ff8800;
+    --theme-red: 255;
+    --theme-green: 136;
+    --theme-blue: 0;
+}
+
 body {
     margin: 0;
     font-family: sans-serif;
