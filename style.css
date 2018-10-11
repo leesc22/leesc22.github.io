@@ -126,5 +126,20 @@ section#home a {
     border-radius: 20px;
 
     /* Background */
-    background-color: rgba(240, 95, 64, 0.8);
+    background-color: rgba(var(--theme-red), var(--theme-green), var(--theme-blue), 0.8);
+}
+
+section#about {
+    background-color: rgba(var(--theme-red), var(--theme-green), var(--theme-blue), 0.8);
+}
+
+section#about div {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+    section#about div {
+        max-width: calc(100% / 12 * 8)
+    }
 }
