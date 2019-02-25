@@ -5,6 +5,10 @@
     --theme-blue: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: sans-serif;
