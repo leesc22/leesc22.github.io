@@ -1,8 +1,8 @@
 :root {
-    --theme: #ff8800;
-    --theme-red: 255;
-    --theme-green: 136;
-    --theme-blue: 0;
+  --theme: #ff8800;
+  --theme-red: 255;
+  --theme-green: 136;
+  --theme-blue: 0;
 }
 
 html {
@@ -10,140 +10,150 @@ html {
 }
 
 body {
-    margin: 0;
-    font-family: sans-serif;
+  margin: 0;
+  font-family: sans-serif;
 }
 
 header {
-    /* Positioning & Sizing */
-    position: fixed;
-    width: 100%;
-    box-sizing: border-box;
+  /* Positioning & Sizing */
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
 
-    /* Paddings*/
-    padding: 1em;
+  /* Paddings*/
+  padding: 1em;
 
-    /* Flexbox */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  /* Flexbox */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    /* Background */
-    background-color: transparent;
+  /* Background */
+  background-color: transparent;
 }
 
 header.scrolled {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 header a.brand {
-    /* Text */
-    color: rgba(255,255,255,.7);
-    font-size: 1.25rem;
-    font-weight: 700;
-    text-decoration: none;
-    text-transform: uppercase;
+  /* Text */
+  color: rgba(255,255,255,.7);
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 header.scrolled a {
-    color: #212529;
+  color: #212529;
 }
 
 header nav ul {
-    list-style-type: none;
+  list-style-type: none;
 
-    margin-top: 0;
-    margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 
-    /* Flexbox */
-    display: flex;
+  /* Flexbox */
+  display: flex;
 }
 
 header nav ul li {
-    margin-left: 40px;
-    text-align: center;
+  margin-left: 40px;
+  text-align: center;
 }
 
 header nav ul li a {
-    /* Text */
-    color: rgba(255,255,255,.7);
-    font-size: 0.9rem;
-    font-weight: 700;
-    text-decoration: none;
-    text-transform: uppercase;
+  /* Text */
+  color: rgba(255,255,255,.7);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 section {
-    padding: 8rem 0;
-}
-
-section#home {
-    /* Sizing */
-    width: 100vw;
-    height: 100vh;
-    max-width: 100%;
-    box-sizing: border-box;
-
-    /* FLexbox */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    /* Text */
-    text-align: center;
-    color: white;
-
-    /* Background */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url('image/rawpixel-645294-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-section#home h1 {
-    font-size: 5em;
-    margin-top: 0;
-    margin-bottom: 0.5em;
-}
-
-section#home a {
-    /* Positioning & Sizing */
-    display: block;
-    width: 200px;
-
-    /* Padding & margins */
-    padding: 1em;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-
-    /* Text */
-    color: white;
-    font-size: 1.25em;
-    font-weight: 700;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    /* Border */
-    border: 3px solid white;
-    border-radius: 20px;
-
-    /* Background */
-    background-color: rgba(var(--theme-red), var(--theme-green), var(--theme-blue), 0.8);
-}
-
-section#about {
-    background-color: rgba(var(--theme-red), var(--theme-green), var(--theme-blue), 0.8);
-}
-
-section#about div {
-    padding: 0 15px;
-    margin: 0 auto;
+  padding: 2rem 0;
 }
 
 @media (min-width: 992px) {
-    section#about div {
-        max-width: calc(100% / 12 * 8)
-    }
+  section {
+    padding: 8rem 0;
+  }
+}
+
+section:nth-child(odd) {
+  background-color: rgba(var(--theme-red), var(--theme-green), var(--theme-blue), 0.8);
+}
+
+section div {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  section div {
+    max-width: calc(100% / 12 * 8)
+  }
+}
+
+section#home {
+  /* Sizing */
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  box-sizing: border-box;
+
+  /* FLexbox */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Text */
+  text-align: center;
+  color: white;
+
+  /* Background */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url('image/rawpixel-645294-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+section#home h1 {
+  font-size: 5em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+section#home a {
+  /* Positioning & Sizing */
+  display: block;
+  width: 200px;
+
+  /* Padding & margins */
+  padding: 1em;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* Text */
+  color: white;
+  font-size: 1.25em;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  /* Border */
+  border: 3px solid white;
+  border-radius: 20px;
+
+  /* Background */
+  background-color: rgba(var(--theme-red), var(--theme-green), var(--theme-blue), 0.8);
+}
+
+footer {
+  padding: 1em;
 }
